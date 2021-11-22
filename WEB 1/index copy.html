@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<title>Projeto 1 Web</title>
+</head>
+<body>
+	<nav>
+		<a class="logo" href="/">Trabalho de WEB</a>
+		<ul class="nav-list">
+			<li><a href="#home">Home</a></li>
+			<li><a href="#Fotos">Mais Fotos</a></li>
+			<li><a href="#Autores">Sobre</a></li>
+			<li><a href="#contato">Contato</a></li>
+			
+		</ul>
+	</nav>
+	<section class="home">
+		<h2>Barracão - Russas - Ceará</h2>
+		<div class="caixa-slideshow">
+
+		<div class="meus-slides fade">
+			<div class="numero-imagem">1 / 2</div>
+			<img src="imgs/20210522_173126.jpg" style="width:100%">
+			<div class="descricao-imagem">Pôr-do-Sol (Açude Santo Antônio de Russas)</div>
+		</div>
+
+		<div class="meus-slides fade">
+			<div class="numero-imagem">2 / 2</div>
+			<img src="imgs/20200331_173315.jpg" style="width:100%">
+			<div class="descricao-imagem">Lance de tarrafa por um morador da comunidade</div>
+		</div>
+
+		<a class="anterior" onclick="controlador_slides(-1, 0)">&#10094;</a>
+		<a class="proximo" onclick="controlador_slides(1, 0)">&#10095;</a>
+		</div>
+    </section>
+	<br>
+	<section class="home1">
+		<h2>Mais Fotos</h2>
+
+		<div class="caixa-slideshow">
+
+		<div class="meus-slides-auto fade">
+			<div class="numero-imagem">1 / 2</div>
+			<img src="imgs/IMG_20200924_171202_407.jpg" style="width:100%">
+			<div class="descricao-imagem">Ipê + pôr-do-sol</div>
+		</div>
+
+		<div class="meus-slides-auto fade">
+			<div class="numero-imagem">2 / 2</div>
+			<img src="imgs/IMG_20200630_214342_359.jpg" style="width:100%">
+			<div class="descricao-imagem">Pôr-de-sol magnífico</div>
+		</div>
+		</div>
+    </section>
+	<section class="sessao-sobre" id="sobre">
+		<div class="sessao-header">
+			<h1>Sobre</h1>
+		</div>
+		<div class="autores">
+			<div class="card">
+				<div class="card-img-wrapper">
+					<img src="imgs/Paulo_Foto.png" alt="foto autor1" />
+				</div>
+				<div class="card-info">
+					<h2>Francisco Paulo Sérgio da Silva</h2>
+					<h3>Estudante de Engenharia de Software</h3>
+					<p>Estudante com foco UX/UI Design e Análise de Requisitos.</p>
+				</div>
+			</div>
+			<div class="card">
+					<div class="card-img-wrapper">
+						<img src="imgs/Pedro.jpg" alt="foto autor2" />
+					</div>
+					<div class="card-info">
+						<h2>Pedro Lima de Oliveira Filho</h2>
+						<h3>Estudante de Engenharia de Software</h3>
+						<p>Estudante com foco em Análise de Requisitos e Marketing Digital.</p>
+					</div>
+			 </div>
+		</div>
+	</section>
+	<section class="sessao-contato" id="contato">
+		<form name="formteste" action="" method="post">
+			<h1>Contato</h1>
+			
+			<p class="nome">
+			<input type="text" name="nome" placeholder="Informe seu nome" required="required">
+			</p>
+							
+			<p class="assunto">
+			<input type="text" name="assunto" placeholder="Informe o assunto" required="required">
+			</p>
+			
+			<p class="mensagem">
+			<textarea name="mensagem" placeholder="Deixe sua mensagem"></textarea>
+			</p>
+			
+			<p class="enviar">
+			<input type="submit" name="enviar" value="Enviar">
+			</p>
+			<div class="telefone">
+		
+				<p classe="telefone">Telefone: 
+					<a href="tel:+55 (88) 9 8148-7900">+55 (88) 9 8148-7900</a></p>
+			</div>
+			<div class="email">
+				<p>
+					Contato por  e-mail:
+					<a href="paulo:paulosergiorussas@gmail.com?subject=Hello%20again">Send E-mail</a>
+				</p>
+			</div>
+		</form>
+	</section>
+	<footer>
+		<p>Copyright &copy 2021 - Todos os direitos reservados</p>
+		<div class="botao">
+			 <button onclick="exibirCreditos()">Créditos</button>
+		</div>
+	</footer>	
+	
+	<script src="script.js"></script>
+</body>
+</html>
